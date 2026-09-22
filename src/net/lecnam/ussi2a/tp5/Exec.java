@@ -10,27 +10,23 @@ public class Exec {
 
     public static void main(String[] args) {
 
-        Rectangle r = new Rectangle(2,3,1.2,9);
-        Rectangle r2 = new Rectangle(2,4,0,0);
+        Figure f1 = new Rectangle(2,3,1.2,9);
+        Figure f2 = new Rectangle(2,4,0,0);
+        Figure f3 = new Rectangle(1,4,1,1);
+        Figure f4 = new Disque(1,2,3);
+        Figure f5 = new Disque(3,2,5);
 
-        dessin.ajout(r);
-        dessin.ajout(r2);
+        dessin.ajout(f1);
+        dessin.ajout(f2);
+        dessin.ajout(f3);
+        dessin.ajout(f4);
+        dessin.ajout(f5);
 
-        System.out.println(dessin.retournePlusGrand());
+        System.out.println("La surface totale est de : " + dessin.retourneSurfaceTotale());
+        System.out.println("La plus grande figure est : " + dessin.retournePlusGrand());
 
-        Figure f1 = new Rectangle(1,4,1,1);
-        Figure f2 = new Disque(1,2,3);
-
-        System.out.println(f1.retourneSurface());
-        System.out.println(f2.retourneSurface());
-
-        Dessin d1 = new Dessin();
-
-        d1.ajout(f1);
-        d1.ajout(f2);
-
-        System.out.println(d1.retourneSurfaceTotale());
-        System.out.println(d1.retournePlusGrand());
+        Point p = new Point(4,6);
+        System.out.println("Est-ce que le point est dans l'une des figures ? \n" + dessin.contient(p));
     }
 
 
