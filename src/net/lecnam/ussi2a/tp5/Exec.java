@@ -43,7 +43,10 @@ public class Exec {
         System.out.println(f8.equals(f7));
 
         Point p1 = new Point(3,2);
-        Figure f10 = new RectangleIncline(6,8,0,0,0.35);
+        Figure f10 = new RectangleIncline(50,80,0,0,0.35);
+
+        dessin.ajout(f10);
+        System.out.println(dessin.retournePlusGrand());
 
         System.out.println(f10.contient(p1));
     }
