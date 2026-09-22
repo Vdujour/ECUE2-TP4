@@ -29,7 +29,15 @@ public class Exec {
         System.out.println("Est-ce que le point est dans l'une des figures ? \n" + dessin.contient(p));
 
         Figure f6 = new Triangle(0,0,0,5,5,0);
-        System.out.println("Surface du triangle : " + f6.retourneSurface());
+        Figure f7 = new Triangle(1,5,6,10,23,0);
+
+        dessin.ajout(f6);
+        dessin.ajout(f7);
+
+        System.out.println("La surface totale est de : " + dessin.retourneSurfaceTotale());
+
+        System.out.println("Le figure la plus grande est : " + dessin.retournePlusGrand());
+
     }
 
 

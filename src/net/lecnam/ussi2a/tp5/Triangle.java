@@ -20,6 +20,17 @@ public class Triangle extends Figure {
         this.c = new Point(xc,yc);
     }
 
+    /*ré-écrire le toString*/
+    @Override
+    public String toString() {
+        return "Triangle{" +
+                "a=" + a +
+                ", b=" + b +
+                ", c=" + c +
+                ", surface=" + this.retourneSurface() +
+                '}';
+    }
+
     /*Mettre la longueur des côtés dans un tableau de double*/
     public double[] calculCote() {
         double l1 = a.retourneDistance(b);
