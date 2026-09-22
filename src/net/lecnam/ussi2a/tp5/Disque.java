@@ -1,14 +1,19 @@
 package net.lecnam.ussi2a.tp5;
 
-public class Disque {
+public class Disque extends Figure{
 
     Point centre;
     double rayon;
 
-    /*Constructeur*/
+    /*Constructeur 1*/
     public Disque(Point centre, double rayon) {
         this.centre = centre;
         this.rayon = rayon;
+    }
+
+    /*Constructeur 2*/
+    public Disque(double x, double y, double rayon) {
+        this(new Point(x, y), rayon);
     }
 
     /*Déplacer le disque*/

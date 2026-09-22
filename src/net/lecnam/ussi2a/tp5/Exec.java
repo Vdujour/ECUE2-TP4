@@ -18,6 +18,19 @@ public class Exec {
 
         System.out.println(dessin.retournePlusGrand());
 
+        Figure f1 = new Rectangle(1,4,1,1);
+        Figure f2 = new Disque(1,2,3);
+
+        System.out.println(f1.retourneSurface());
+        System.out.println(f2.retourneSurface());
+
+        Dessin d1 = new Dessin();
+
+        d1.ajout(f1);
+        d1.ajout(f2);
+
+        System.out.println(d1.retourneSurfaceTotale());
+        System.out.println(d1.retournePlusGrand());
     }
 
 
