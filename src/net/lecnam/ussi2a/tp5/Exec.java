@@ -38,6 +38,14 @@ public class Exec {
 
         System.out.println("Le figure la plus grande est : " + dessin.retournePlusGrand());
 
+        Figure f8 = new RectangleIncline(5,3,0,0,0);
+        Figure f9 = new Rectangle(5,3,0,0);
+        System.out.println(f8.equals(f7));
+
+        Point p1 = new Point(3,2);
+        Figure f10 = new RectangleIncline(6,8,0,0,0.35);
+
+        System.out.println(f10.contient(p1));
     }
 
 
